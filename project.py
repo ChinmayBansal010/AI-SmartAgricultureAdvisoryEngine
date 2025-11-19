@@ -14,7 +14,7 @@ class KnowledgeBase:
             CropRule("Maize", self.is_maize),
             CropRule("Rice", self.is_clay_rice),
             CropRule("Millets", self.is_millets)
-        ]g
+        ]
 
     def is_wheat(self, d):
         return d.region == "North" and d.soil == "Alluvial" and 20 <= d.temperature <= 30 and d.rainfall > 100
